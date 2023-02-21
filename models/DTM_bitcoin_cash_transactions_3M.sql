@@ -1,4 +1,4 @@
-{{ config(materialized='table', table_name='STG_bitcoin_cash_transactions_3M') }}
+{{ config(materialized='table', table_name='DTM_bitcoin_cash_transactions_3M') }}
 
 SELECT
 	ARRAY_TO_STRING(inputs_addresses, ",") as inputs_addresses,
