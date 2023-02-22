@@ -3,9 +3,6 @@
 Bitcoin Cash is a cryptocurrency that allows more bytes to be included in each block relative to its common ancestor Bitcoin. 
 There is a public dataset on BigQuery that contains the blockchain data in their entirety (dataset ID: <a href="https://console.cloud.google.com/marketplace/product/bitcoin-cash/crypto-bitcoin-cash">bigquery-public-data.crypto_bitcoin_cash</a>) with data pre-processed to be human-friendly and to support common use cases such as auditing, investigating, and researching the economic and financial properties of the system.
 
-
-https://console.cloud.google.com/bigquery?project=bitcoin-cash-challenge
-
 <h2>Project Overview</h2>
 
 In this project, we will create  staging table from the raw table "transactions" that only selects the last three months of data from this raw table. 
@@ -38,6 +35,16 @@ To Run datamart model
 ```
 dbt run --models DTM_bitcoin_cash_transactions_3M
 ```
+
+<h2>The amount of transactions</h2>
+
+As we are dealing with transactions, we have some incomes and somes outcomes. This is why I decided to plot 3 graphs : incomes, outcomes and the global balance.
+
+![INCOMES](input.JPG)
+
+![OUTCOMES](output.JPG)
+
+![TOTAL](total.JPG)
 
 <h2>References</h2>
 
