@@ -40,11 +40,11 @@ dbt run --models DTM_bitcoin_cash_transactions_3M
 
 As we are dealing with transactions, we have some incomes and somes outcomes. This is why I decided to plot 3 graphs : incomes, outcomes and the global balance.
 
-![INCOMES](input.JPG)
+![INCOMES](pictures/input.JPG)
 
-![OUTCOMES](output.JPG)
+![OUTCOMES](pictures/output.JPG)
 
-![TOTAL](total.JPG)
+![TOTAL](pictures/total.JPG)
 
 <h2>References</h2>
 
