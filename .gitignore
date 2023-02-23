@@ -2,3 +2,5 @@
 target/
 dbt_packages/
 logs/
+terraform-docker-container/bitcoin-cash-terraform.json
+terraform-docker-container/terraform.tfvars
