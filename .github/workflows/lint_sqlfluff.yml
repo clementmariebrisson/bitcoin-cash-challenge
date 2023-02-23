@@ -1,7 +1,12 @@
 name: SQLFluff
 
 on:
-  - pull_request
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
 
 jobs:
   lint-models:
@@ -48,6 +53,4 @@ jobs:
       - name: Annotate
         uses: yuzutech/annotations-action@v0.3.0
         with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
-          title: "SQLFluff Lint"
-          input: "./annotations.json"
+          path: models/dbt-bigquery/
