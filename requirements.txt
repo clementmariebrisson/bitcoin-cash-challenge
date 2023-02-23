@@ -1,4 +1,4 @@
-sqlfluff>=1.4.5
-dbt-bigquery>=1.4.1
-sqlfluff-templater-dbt>=1.4.2
-dbt-core>=1.4.2
+sqlfluff==${SQLFLUFF_VERSION}
+sqlfluff-templater-dbt==${SQLFLUFF_VERSION}
+dbt-core<1.4
+setuptools>=65.5.1
