@@ -1,5 +1,8 @@
 {{ config(materialized='table', 
           table_name='STG_bitcoin_cash_transactions_3M') }}
+
+-- THIS REQUEST CREATES THE STAGING TABLE
+
 SELECT
 	`hash`,
 	size,
