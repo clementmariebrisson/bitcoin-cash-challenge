@@ -1,6 +1,10 @@
 {{ config(materialized='table', table_name='DTM_bitcoin_cash_transactions_3M') }}
 
+
+
 -- THIS REQUEST CREATES THE STAGING TABLE
+
+
 
 SELECT
 	ARRAY_TO_STRING(inputs_addresses, ",") as inputs_addresses,
