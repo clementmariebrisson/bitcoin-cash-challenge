@@ -40,3 +40,5 @@ FROM `bigquery-public-data.crypto_bitcoin_cash.transactions` as bitcoin_cash
 LEFT JOIN unnest(bitcoin_cash.inputs) as unnested_inputs
 LEFT JOIN unnest(bitcoin_cash.outputs) as unnested_outputs
 WHERE DATE(bitcoin_cash.block_timestamp) > DATE_SUB( DATE( CURRENT_TIMESTAMP() ), INTERVAL 3 MONTH)
+
+
