@@ -2,7 +2,6 @@
 
 -- THIS REQUEST CREATES THE STAGING TABLE
 
-
 SELECT
 	ARRAY_TO_STRING(inputs_addresses, ",") as inputs_addresses,
 	ARRAY_TO_STRING(outputs_addresses, ",") as outputs_addresses,
@@ -18,8 +17,4 @@ GROUP by
 ORDER by 
 	input_balance desc,
 	output_balance desc,
-	block_date desc
-	
-	
-	
-	
+	block_date desc	
