@@ -28,6 +28,7 @@ To get started with this project, follow these steps:
 
 <h3>dbt</h3>
 To Run staging table model on dbt Cloud
+
 ```
 dbt run --models STG_bitcoin_cash_transactions_3M
 ```
@@ -39,9 +40,12 @@ dbt run --models DTM_bitcoin_cash_transactions_3M
 
 <h3>Drizly's SQLFluff</h3>
 <a href="https://github.com/sqlfluff/">SQLFluff</a> is a SQL linter and auto-formatter that can help you catch errors and enforce consistent style in your SQL code. It supports a variety of SQL dialects and can be easily integrated into your workflow using Github Actions.
+
 </br>
-</br>
+
 To use SQLFluff on Github Actions, you need to create a new workflow file in your repository like this one <a href="https://github.com/clementmariebrisson/bitcoin-cash-challenge/tree/main/.github/workflows/lint_sqlfluff.yml">lint_sqlfluff.yml</a>
+
+</br>
 
 This workflow uses the **sqlfluff** package to lint any SQL files in your **/models** directory that have been added or modified in the latest push or pull request on the main branch. It also uses the **yuzutech/annotations-action** to annotate your Github pull request with any lint errors found by SQLFluff.
 
@@ -64,7 +68,7 @@ credentials_file         = "<FILE>"
 ```./setup.bash```
 6. Anytime you modify your configuration execute ```terraform apply```
 
-Once you are finished with Terraform, don't forget to terminates resources by executing ```terraform destroy```
+Once you are finished with Terraform, don't forget to terminate resources by executing ```terraform destroy```
 
 <h2>The amount of transactions</h2>
 
