@@ -64,7 +64,7 @@ project                  = "<PROJECT_ID>"
 credentials_file         = "<FILE>"
 ```
 
-5. GO to terraform-docker-container and execute 
+5. Go to ```terraform-docker-container/``` and execute 
 ```./setup.bash```
 6. Anytime you modify your configuration execute ```terraform apply```
 
@@ -79,9 +79,6 @@ As we are dealing with transactions, we have some incomes and somes outcomes. Th
 ![OUTCOMES](pictures/output.JPG)
 
 ![TOTAL](pictures/total.JPG)
-
-<h2>Getting Started</h2>
-
 
 <h2>References</h2>
 
