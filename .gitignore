@@ -1,6 +1,6 @@
 
-target/
-dbt_packages/
-logs/
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
 terraform-docker-container/bitcoin-cash-terraform.json
 terraform-docker-container/terraform.tfvars
