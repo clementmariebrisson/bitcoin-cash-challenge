@@ -8,12 +8,12 @@ SELECT
 	DATE(block_timestamp) AS block_date
 FROM `bitcoin-cASh-challenge.dbt_cmariebrisson.STG_bitcoin_cASh_transactions_3M`
 WHERE is_coinbASe = FALSE
-GROUP by 
+GROUP BY 
 	inputs_addresses,
 	outputs_addresses,
 	block_date
-ORDER by 
-	input_balance desc,
-	output_balance desc,
-	block_date desc
+ORDER BY 
+	input_balance DESC,
+	output_balance DESC,
+	block_date DESC
 	
