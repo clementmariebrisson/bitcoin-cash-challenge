@@ -2,8 +2,7 @@
 
 -- THIS REQUEST CREATES THE STAGING TABLE
 
-
-SEEEEEELECT
+SEEELECT
 	ARRAY_TO_STRING(inputs_addresses, ",") as inputs_addresses,
 	ARRAY_TO_STRING(outputs_addresses, ",") as outputs_addresses,
 	SUM(input_value) as input_balance,
