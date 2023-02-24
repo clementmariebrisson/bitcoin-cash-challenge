@@ -10,6 +10,7 @@ on:
 
 jobs:
   lint-models:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - name: checkout
